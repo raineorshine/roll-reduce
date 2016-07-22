@@ -1,0 +1,36 @@
+{
+  "name": "roll-reduce",
+  "version": "0.0.0",
+  "description": "Generic rolling-value reducer interface, e.g. rolling averages, etc.",
+  "license": "ISC",
+  "repository": "https://github.com/raineorshine/roll-reduce",
+  "author": {
+    "name": "Raine Revere",
+    "email": "raineorshine@gmail.com",
+    "url": "https://github.com/raineorshine"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "main": "dist",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "build": "babel -d dist src",
+    "postinstall": "npm run build",
+    "watch": "nodemon -w src -w test -x \"npm run build && npm test\""
+  },
+  "keywords": [
+    "rolling",
+    "average",
+    "reducer"
+  ],
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "babel-cli": "*",
+    "babel-preset-es2015": "*",
+    "babel-register": "*"
+  }
+}

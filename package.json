@@ -1,6 +1,6 @@
 {
   "name": "roll-reduce",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generic rolling-value reducer interface, e.g. rolling averages, etc.",
   "license": "ISC",
   "repository": "https://github.com/raineorshine/roll-reduce",

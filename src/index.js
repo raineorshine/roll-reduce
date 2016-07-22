@@ -1,4 +1,4 @@
-const sum = (x, y) => x + y
+const sum = (x, y) => (+x) + (+y)
 const average = list => list.reduce(sum, 0)/list.length
 
 export default (size = Infinity, reducer, start) => {
